@@ -1,0 +1,60 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+  <a href="/dashboard" class="brand-link">
+    <span class="brand-text font-weight-light"> BETA | FilNov</span>
+  </a>
+
+  <div class="sidebar">
+    <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+      <div class="image">
+        <img src="/img/avatar.png" class="img-circle elevation-2" alt="User Image">
+      </div>
+      
+      <div class="info">
+        <a href="#" class="d-block">{{ Auth::user()->fname }} {{ Auth::user()->lname }}</a>
+      </div>
+    </div>
+
+    <div class="form-inline">
+      <div class="input-group" data-widget="sidebar-search">
+        <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-sidebar">
+            <i class="fas fa-search fa-fw"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="mt-2">
+      <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+        <li class="nav-header">GENRE</li>
+        <li class="nav-item">
+          <a href="/dashboard" class="nav-link">
+            <i class="nav-icon fas fa-chess-queen"></i><p>Legends</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="nav-link">
+            <i class="nav-icon fas fa-book"></i>
+            <p>Non-Fiction</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/dashboard" class="nav-link">
+            <i class="nav-icon fas fa-poll-h"></i><p>Poetry</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/dashboard" class="nav-link">
+            <i class="nav-icon fas fa-heart"></i><p>Drama</p>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="/dashboard" class="nav-link">
+            <i class="nav-icon fas fa-mountain"></i><p>Myth</p>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</aside>
